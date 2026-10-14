@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoRide - Transportation App</title>
+</head>
+
+<body>
+    <header>
+        <img src="logo.png" alt="Turfast Logo" width="300">
+
+        <h1>Turfast</h1>
+    </header>
+</body>
+
+    <p><em>Your reliable partner in transportation</em></p>
+
+    <nav>
+        <a href="#book">Book a Ride</a> |
+        <a href="#fleet">Our Vehicles</a> |
+        <a href="#map">Map</a> |
+        <a href="#media">Media</a> |
+        <a href="#schedule">Schedule</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+
+        <hr>
+    </header>
+
+        <main>
+        <section id="book">
+        <h2>Book a Ride</h2>
+
+            <form action="#" method="post">
+            <fieldset>
+            <legend>Trip Details</legend>
+
+                <p>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+                </p>
+
+                <p>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </p>
+
+                <p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"placeholder="Enter your email">
+                </p>
+
+                <p>
+                <label for="pickup">Pick-up Location:</label>
+                <input type="text" id="pickup" name="pickup"list="places" placeholder="Choose a location">
+
+                <datalist id="places">
+                <option value="Central Terminal">
+                <option value="City Hall">
+                <option value="Airport">
+                <option value="University Campus">
+                <option value="Public Market">
+                </datalist>
+                </p>
+
+                <p>
+                <label for="dropoff">Drop-off Location:</label>
+                <input type="text" id="dropoff" name="dropoff"list="places" placeholder="Choose a location">
+                </p>
+
+                <p>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+                </p>
+
+                <p>
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+                </p>
+
+                <p>
+                <label for="passengers">Passengers:</label>
+                <input type="number" id="passengers" name="passengers"min="1" max="10" value="1">
+                </p>
+
+                <p>
+                <label for="vehicle">Vehicle Type:</label>
+                <select id="vehicle" name="vehicle">
+                <option value="taxi">Taxi</option>
+                <option value="van">Van</option>
+                <option value="shuttle-bus">Shuttle Bus</option>
+                <option value="motorcycle-taxi">Motorcycle Taxi</option>
+                <option value="tricycle">Tricycle</option>
+                </select>
+                </p>
+
+                <p>
+                <label>Payment Method:</label>
+                <input type="radio" id="cash" name="payment" value="cash" checked>
+                <label for="cash">Cash</label>
+
+                <input type="radio" id="card" name="payment" value="card">
+                <label for="card">Card</label>
+
+                <input type="radio" id="ewallet" name="payment" value="e-wallet">
+                <label for="ewallet">E-Wallet</label>
+                </p>
+
+                <p>
+                <label>Extras:</label>
+                <input type="checkbox" id="luggage" name="extras" value="extra-luggage">
+                <label for="luggage">Extra luggage</label>
+
+                <input type="checkbox" id="child-seat" name="extras" value="child-seat">
+                <label for="child-seat">Child seat</label>
+
+                <input type="checkbox" id="wheelchair" name="extras" value="wheelchair-accessible">
+                <label for="wheelchair">Wheelchair accessible</label>
+                </p>
+
+                <p>
+                <label for="notes">Notes for the driver:</label><br>
+                <textarea id="notes" name="notes" rows="5" cols="40" placeholder="Enter any notes for the driver"></textarea>
+                </p>
+
+                <p>
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms"> I agree to the <a href="#terms-info">Terms & Conditions</a>
+                </label>
+                </p>
+
+                <p>
+                <button type="submit">Book Now</button>
+                <button type="reset">Clear</button>
+                </p>
+
+                </fieldset>
+            </form>
+        </section>
+
+        <hr>
+
+        <section id="fleet">
+    <h2>Our Vehicles</h2>
+
+    <figure>
+        <img src="taxi1.png"
+             alt="A GoRide taxi" width="400" height="250">
+        <figcaption>
+            <strong>Taxi</strong> – Fast and safe ride and good for 3 passengers.
+        </figcaption>
+    </figure>
+
+    <figure>
+        <img src="van1.png"
+             alt="A GoRide van" width="400" height="250">
+        <figcaption>
+            <strong>Van</strong> – Good for families up to 10.
+        </figcaption>
+    </figure>
+
+    <figure>
+        <img src="bus1.png"
+             alt="A GoRide shuttle bus" width="400" height="250">
+        <figcaption>
+            <strong>Shuttle Bus</strong> – Affordable transportation.
+        </figcaption>
+    </figure>
+
+    <small>Placeholder images can be replaced with real photos.</small>
+
+    <hr>
+</section>
+
+<section id="media">
+    <h2>Media</h2>
+
+    <h3>How GoRide Works (Video)</h3>
+
+    <video width="480" controls poster="jeep1.png">
+        <source src="paano sumakay ng jeep sa pilipinas.mp4" type="video/mp4">
+        <source src="paano sumakay ng jeep sa pilipinas.mp4" type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+
+    <h3>Driver Announcement (Audio)</h3>
+
+    <audio controls>
+        <source src="paano sumakay ng jeep sa pilipinas.mp3" type="audio/mpeg">
+        <source src="paano sumakay ng jeep sa pilipinas.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <h3>Watch on YouTube (Embedded)</h3>
+
+    <iframe
+        src="https://www.youtube.com/embed/0hSSPpbh54o"
+        title="GoRide Transportation Video"
+        allowfullscreen>
+    </iframe>
+
+    <hr>
+</section>
+
+
+<section id="schedule">
+    <h2>Shuttle Schedule</h2>
+
+    <table border="1" cellpadding="6" cellspacing="0">
+        <caption>Daily departures from Central Terminal</caption>
+
+        <thead>
+            <tr>
+                <th>Route</th>
+                <th>Departure</th>
+                <th>Arrival</th>
+                <th>Fare</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Terminal to City Hall</td>
+                <td>8:00 AM</td>
+                <td>8:20 AM</td>
+                <td>₱20</td>
+            </tr>
+
+            <tr>
+                <td>Terminal to University</td>
+                <td>9:00 AM</td>
+                <td>9:30 AM</td>
+                <td>₱25</td>
+            </tr>
+
+            <tr>
+                <td>Terminal to Airport</td>
+                <td>10:00 AM</td>
+                <td>10:45 AM</td>
+                <td>₱50</td>
+            </tr>
+
+            <tr>
+                <td>Terminal to Public Market</td>
+                <td>11:00 AM</td>
+                <td>11:20 AM</td>
+                <td>₱20</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Check Your Route</h3>
+
+    <form method="get">
+        <label for="route">Choose a route:</label>
+
+        <select id="route" name="route">
+            <option value="city-hall">Terminal to City Hall</option>
+            <option value="university">Terminal to University</option>
+            <option value="airport">Terminal to Airport</option>
+            <option value="public-market">Terminal to Public Market</option>
+        </select>
+
+        <button type="submit">Search</button>
+    </form>
+
+    <hr>
+</section>
+
+<section id="contact">
+    <h2>Contact & Feedback</h2>
+
+    <form enctype="multipart/form-data">
+        <fieldset>
+            <legend>Send Feedback</legend>
+
+            <p>
+                <label for="feedback-name">Your name:</label><br>
+                <input type="text" id="feedback-name"
+                       name="feedback-name" required>
+            </p>
+
+            <p>
+                <label for="rating">Rate your ride (1-5):</label><br>
+                <input type="range" id="rating" name="rating"
+                       min="1" max="5" value="5">
+            </p>
+
+            <p>
+                <label for="topic">Topic:</label><br>
+                <select id="topic" name="topic">
+                    <option value="compliment">Compliment</option>
+                    <option value="complaint">Complaint</option>
+                    <option value="lost-item">Lost item</option>
+                    <option value="suggestion">Suggestion</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message"
+                          rows="5" cols="40" required></textarea>
+            </p>
+
+            <p>
+                <label for="photo">Attach a photo (optional):</label><br>
+                <input type="file" id="photo" name="photo"
+                       accept="image/*">
+            </p>
+
+            <button type="submit">Send Feedback</button>
+
+        </fieldset>
+    </form>
+
+    <h3>Reach Us</h3>
+
+    <address>
+        GoRide Transportation<br>
+        Central Terminal, Cebu City<br>
+        Phone: <a href="tel:+631234567890">+63 123 456 7890</a><br>
+        Email: <a href="mailto:goride@example.com">goride@example.com</a>
+    </address>
+
+    <hr>
+</section>
+
+
+<section id="links">
+    <h2>Useful Links</h2>
+
+    <ul>
+        <li>
+            <a href="https://www.openstreetmap.org/"
+               target="_blank" rel="noopener">OpenStreetMap</a>
+        </li>
+
+        <li>
+            <a href="https://maps.google.com/"
+               target="_blank" rel="noopener">Google Maps</a>
+        </li>
+
+        <li>
+            <a href="https://www.facebook.com/samueljames.corla.5"
+               target="_blank" rel="noopener">Facebook</a>
+        </li>
+
+        <li>
+            <a href="#top">Back to top</a>
+        </li>
+    </ul>
+</section>
+
+<section id="terms-info">
+    <h2>Terms & Conditions</h2>
+
+    <details>
+        <summary>Read the terms</summary>
+
+        <ol>
+            <li>Passengers must provide accurate booking information.</li>
+            <li>Passengers must follow the driver's instructions.</li>
+            <li>GoRide is not responsible for lost personal belongings.</li>
+        </ol>
+    </details>
+</section>
+
+</main>
+
+<footer>
+    <hr>
+    <p>&copy; 2026 GoRide Transportation. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
